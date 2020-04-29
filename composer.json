@@ -1,7 +1,7 @@
 {
     "name": "itkee/laravel-restful",
     "keywords": ["laravel", "restful"],
-    "description": "Laravel Restful Development based Baijunyao",
+    "description": "Laravel Restful Development based Baijunyao,匹配基本增删该查前的逻辑操作",
     "type": "library",
     "license": "MIT",
     "authors": [
