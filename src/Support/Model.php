@@ -11,7 +11,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
  *
  * @author  hanmeimei
  *
- * @package Baijunyao\LaravelRestful\Traits
+ * @package itkee\LaravelRestful\Traits
  *
  * @mixin Builder
  */

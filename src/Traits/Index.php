@@ -17,7 +17,7 @@ trait Index
     public function index(Request $request)
     {
         //构造查询条件
-        $where = static::bulidMap($request);
+        $where = static::beforeIndex($request);
 
         $model = static::getModelFQCN();
         $resource = static::getResourceFQCN();
