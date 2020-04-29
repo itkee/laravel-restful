@@ -1,0 +1,26 @@
+{
+    "name": "itkee/laravel-restful",
+    "keywords": ["laravel", "restful"],
+    "description": "Laravel Restful Development based Baijunyao",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "SuperMan",
+            "email": "superman@itkee.cn"
+        },
+        {
+            "name": "baijunyao",
+            "email": "baijunyao@baijunyao.com"
+        }
+    ],
+    "require": {
+        "php": "^7.2",
+        "laravel/framework": "^6.0|^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "itkee\\LaravelRestful\\": "src/"
+        }
+    }
+}
