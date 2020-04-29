@@ -21,9 +21,9 @@ trait Update
         //更新前逻辑操作 如果不是200状态码，则进行错误返回
         $beforeResult = $this->beforeUpdate($request);
 
-        if($beforeResult['statusCode'] !== 200){
+        if(is_array($beforeResult) && $beforeResult['statusCode'] !== 200){
             return response()->json(['error' => $beforeResult['error']], $beforeResult['statusCode']);
-        };
+        }
 
 
         $model = static::getModelFQCN();

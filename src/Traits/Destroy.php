@@ -24,7 +24,7 @@ trait Destroy
 
         //保存操作前进行数据验证
         $beforeResult = $this->beforeDestory($request);
-        if($beforeResult['statusCode'] !== 200){
+        if(is_array($beforeResult) && $beforeResult['statusCode'] !== 200){
             return response()->json(['error' => $beforeResult['error']], $beforeResult['statusCode']);
         };
 

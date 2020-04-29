@@ -20,7 +20,7 @@ trait Show
         $resource = static::getResourceFQCN();
         //保存操作前进行数据验证
         $beforeResult = $this->beforeShow($request);
-        if($beforeResult['statusCode'] !== 200){
+        if(is_array($beforeResult) && $beforeResult['statusCode'] !== 200){
             return response()->json(['error' => $beforeResult['error']], $beforeResult['statusCode']);
         };
         
