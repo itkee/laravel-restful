@@ -1,6 +1,6 @@
 <?php
 
-namespace itkee\LaravelRestful\Exceptions;
+namespace Itkee\LaravelRestful\Exceptions;
 
 use \Exception;
 use \Throwable;

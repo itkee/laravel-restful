@@ -1,6 +1,6 @@
 <?php
 
-namespace itkee\LaravelRestful;
+namespace Itkee\LaravelRestful;
 
 use Baijunyao\LaravelRestful\Support\Model;
 use Illuminate\Contracts\Container\BindingResolutionException;

@@ -1,6 +1,6 @@
 <?php
 
-namespace itkee\LaravelRestful\Support;
+namespace Itkee\LaravelRestful\Support;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model as BaseModel;

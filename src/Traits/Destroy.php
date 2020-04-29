@@ -1,6 +1,6 @@
 <?php
 
-namespace itkee\LaravelRestful\Traits;
+namespace Itkee\LaravelRestful\Traits;
 
 use Baijunyao\LaravelRestful\Exceptions\LaravelRestfulException;
 use Illuminate\Contracts\Routing\ResponseFactory;
