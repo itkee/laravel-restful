@@ -39,6 +39,10 @@ trait Update
         $currentModel = $model::find($this->getRouteId());
         $currentModel->update(request()->all());
 
-        return new $resource($currentModel);
+        if($resource){
+            return new $resource($currentModel);
+        }else{
+            return response()->json($currentModel, 200);
+        }
     }
 }
