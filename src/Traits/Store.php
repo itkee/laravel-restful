@@ -7,6 +7,13 @@ use Illuminate\Http\Resources\Json\JsonResource;
 
 trait Store
 {
+
+    /**
+     * @param Request $request
+     * 保存前操作
+     */
+    protected function beforeStore(Request $request){}
+    
     /**
      * Store
      *

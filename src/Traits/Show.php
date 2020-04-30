@@ -7,6 +7,13 @@ use Illuminate\Http\Resources\Json\JsonResource;
 
 trait Show
 {
+
+    /**
+     * @param Request $request
+     * 查询前操作
+     */
+    protected function beforeShow(Request $request){}
+
     /**
      * Show
      *

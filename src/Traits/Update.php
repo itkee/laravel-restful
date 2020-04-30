@@ -7,6 +7,13 @@ use Illuminate\Http\Resources\Json\JsonResource;
 
 trait Update
 {
+
+    /**
+     * 更新前操作
+     * @param Request $request
+     */
+    protected function beforeUpdate(Request $request){}
+
     /**
      * Update
      *

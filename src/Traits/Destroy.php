@@ -9,6 +9,13 @@ use Illuminate\Http\Response;
 
 trait Destroy
 {
+
+    /**
+     * @param Request $request
+     * 删除前操作
+     */
+    protected function beforeDestory(Request $request){}
+    
     /**
      * Destroy
      *

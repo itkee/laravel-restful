@@ -8,6 +8,12 @@ use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
 trait Index
 {
     /**
+     * @param Request $request
+     * 构造条件
+     */
+    protected function beforeIndex(Request $request){}
+
+    /**
      * Index
      *
      * @return AnonymousResourceCollection
