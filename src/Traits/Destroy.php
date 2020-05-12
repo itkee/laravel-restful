@@ -33,7 +33,7 @@ trait Destroy
         $beforeResult = $this->beforeDestory($request);
         if(is_array($beforeResult) && $beforeResult['statusCode'] !== 200){
             return response()->json(['error' => $beforeResult['error']], $beforeResult['statusCode']);
-        };
+        }
 
         if ($model::destroy($id) === 0) {
             return response()->json(['error' => '删除失败'], 500);
@@ -43,7 +43,7 @@ trait Destroy
         if($resource){
             return new $resource($model::find($id));
         }else{
-            return response()->json($model::($id), 200);
+            return response()->json($model::withTrashed()->find($id), 200);
         }
     }
 }
