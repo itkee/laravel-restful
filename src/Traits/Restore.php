@@ -18,7 +18,7 @@ trait Restore
         $model = static::getModelFQCN();
         $resource = static::getResourceFQCN();
 
-        $currentModel = $model::withTrashed()->find($this->getRouteId());
+        $currentModel = $model::find($this->getRouteId());
         $currentModel->restore();
 
         return new $resource($currentModel);

@@ -27,7 +27,7 @@ trait Index
         $model = static::getModelFQCN();
         $resource = static::getResourceFQCN();
         try{
-            $list = $model::query()->withTrashed()->where($where)->paginate(static::PER_PAGE);
+            $list = $model::query()->where($where)->paginate(static::PER_PAGE);
 
             if($resource){
                 return $resource::collection($list);

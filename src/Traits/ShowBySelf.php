@@ -32,9 +32,9 @@ trait ShowBySelf
         };
         
         if($resource){
-            return new $resource($model::withTrashed()->find($request->get('uid')));
+            return new $resource($model::find($request->get('uid')));
         }else{
-            return response()->json($model::withTrashed()->find($request->get('uid')), 200);
+            return response()->json($model::find($request->get('uid')), 200);
         }
     }
 }

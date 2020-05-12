@@ -32,9 +32,9 @@ trait Show
         };
         
         if($resource){
-            return new $resource($model::withTrashed()->find($this->getRouteId()));
+            return new $resource($model::find($this->getRouteId()));
         }else{
-            return response()->json($model::withTrashed()->find($this->getRouteId()), 200);
+            return response()->json($model::find($this->getRouteId()), 200);
         }
     }
 }

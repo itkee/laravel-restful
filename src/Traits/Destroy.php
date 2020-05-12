@@ -41,9 +41,9 @@ trait Destroy
         $resource = static::getResourceFQCN();
 
         if($resource){
-            return new $resource($model::withTrashed()->find($id));
+            return new $resource($model::find($id));
         }else{
-            return response()->json($model::withTrashed()->find($id), 200);
+            return response()->json($model::($id), 200);
         }
     }
 }
